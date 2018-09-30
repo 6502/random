@@ -4,7 +4,7 @@ What is normally needed for random numbers
      // The random state generator (one per thread)
      // auto-initialized from current epoch in milliseconds
      // on thread start
-     thread_local unsigned random_state;
+     unsigned& random_state();
 
      // Returns an uniform random number x ∈ [0 ... max[
      unsigned rnd(int max);
