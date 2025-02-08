@@ -67,7 +67,7 @@ inline double rnd() {
     unsigned long long x = rs;
     rndNext();
     x |= ((unsigned long long)rs) << 32;
-    return x / 18446744073709551616.0;
+    return x * (1.0 / 18446744073709551616.0);
 }
 
 template<typename RIT>
